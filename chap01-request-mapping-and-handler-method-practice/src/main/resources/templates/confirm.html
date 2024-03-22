@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 th:text="|${session.nick} 님의 주문 확인서|"></h1>
+    <h3 th:text="|주문 상품명 : ${orderDTO.productName}|"></h3>
+    <h3 th:text="|주문 수량 : ${orderDTO.quantity}|"></h3>
+    <h3 th:text="|주문자 : ${orderDTO.memberName}|"></h3>
+    <h3 th:text="|배송 주소 : ${orderDTO.address}|"></h3>
+    <h3 th:text="|연락처 : ${orderDTO.phone}|"></h3>
+    <h3 th:text="|주문일 : ${orderDTO.orderDt}|"></h3>
+    <button onclick="location.href='/'">메인으로 돌아가기</button>
+</body>
+</html>
